@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @Slf4j
-@RestControllerAdvice //@ResponseBody + @ControllerAdvice
+//@ResponseBody + @ControllerAdvice
+@RestControllerAdvice(basePackages = "hello.exception.api")
 public class ExControllerAdvice {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
